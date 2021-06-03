@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import openAllMaps from './Map/all-maps';
+
 
 const App = () => {
   return (
