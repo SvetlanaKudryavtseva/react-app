@@ -6,6 +6,15 @@ import openAllMaps from './Map/all-maps';
 const App = () => {
   return (
     <div>
+      <Technologies />
+      <ReactTechnologies />
+      <openAllMaps />
+    </div>
+  );
+}
+
+const Technologies = () => {
+  return (
     <div>
       <ul>
         <li>css</li>
@@ -13,14 +22,17 @@ const App = () => {
         <li>js</li>
       </ul>
     </div>
-    <div className="App">
+  )
+}
+const ReactTechnologies = () => {
+  return (
+    <div>
       <ul>
         <li>react</li>
         <li>redux</li>
       </ul>
     </div>
-    </div>
-  );
+  )
 }
 
 export default App;
