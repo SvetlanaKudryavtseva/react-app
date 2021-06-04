@@ -1,4 +1,4 @@
-let openYandex = () => {
+const openYandex = () => {
     return(
     <div>yandex</div>
     );

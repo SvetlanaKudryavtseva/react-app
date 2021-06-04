@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import openAllMaps from './Map/all-maps';
+import OpenAllMaps from './Map/all-maps';
+// import openYandex from './Map/Yandex';
+import Technologies from './Technologies/Technologies';
+import ReactTechnologies from './Technologies/ReactTechnologies';
 
 
 const App = () => {
@@ -8,31 +11,9 @@ const App = () => {
     <div>
       <Technologies />
       <ReactTechnologies />
-      <openAllMaps />
+      {/* <openYandex /> */}
     </div>
   );
-}
-
-const Technologies = () => {
-  return (
-    <div>
-      <ul>
-        <li>css</li>
-        <li>html</li>
-        <li>js</li>
-      </ul>
-    </div>
-  )
-}
-const ReactTechnologies = () => {
-  return (
-    <div>
-      <ul>
-        <li>react</li>
-        <li>redux</li>
-      </ul>
-    </div>
-  )
 }
 
 export default App;

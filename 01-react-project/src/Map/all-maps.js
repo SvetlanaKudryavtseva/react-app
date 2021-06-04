@@ -1,9 +1,9 @@
 import openGoogle from "./google";
-import openYandex from "./yandex"
+import openYandex from "./Yandex"
 
-let openAllMaps = () => {
+let OpenAllMaps = () => {
     openYandex();
     openGoogle();
 }
 
-export default openAllMaps;
+export default OpenAllMaps;
