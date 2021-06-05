@@ -1,3 +1,28 @@
-li {
-    color: red;
+.app-wrapper {
+    display: grid;
+    grid-template-areas: "h h" "n c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.app-header {
+    grid-area: h;
+    background-color: green;
+}
+
+.app-header__logo {
+    width: 100px;
+}
+
+.app-nav {
+    grid-area: n;
+    background-color: yellow;
+}
+
+.app-content {
+    grid-area: c;
+    background-color: purple;
 }

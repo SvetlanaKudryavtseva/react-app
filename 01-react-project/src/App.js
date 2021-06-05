@@ -1,17 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import OpenAllMaps from './Map/all-maps';
-// import openYandex from './Map/Yandex';
-import Technologies from './Technologies/Technologies';
-import ReactTechnologies from './Technologies/ReactTechnologies';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+
+
+
 
 
 const App = () => {
   return (
-    <div>
-      <Technologies />
-      <ReactTechnologies />
-      {/* <openYandex /> */}
+    <div className="app-wrapper">
+      <Header />
+      <Navbar />
+      <Profile />
     </div>
   );
 }
