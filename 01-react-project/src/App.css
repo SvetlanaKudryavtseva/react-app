@@ -8,19 +8,6 @@
     margin: 0 auto;
 }
 
-.app-header {
-    grid-area: h;
-    background-color: green;
-}
-
-.app-header__logo {
-    width: 100px;
-}
-
-.app-nav {
-    grid-area: n;
-    background-color: yellow;
-}
 
 .app-content {
     grid-area: c;

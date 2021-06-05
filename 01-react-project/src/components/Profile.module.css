@@ -1,0 +1,13 @@
+.content {
+    grid-area: c;
+    background-color: purple;
+}
+
+.img {
+    height: 200px;
+    width: 100%;
+}
+
+.person_avatar {
+    height: 200px;
+}
