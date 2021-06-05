@@ -1,4 +1,5 @@
 const Profile = () => {
+    return (
     <div className="app-content">
         <img className="app-content__img--top" src="https://about.fb.com/wp-content/uploads/2018/01/well-being.png?fit=1258%2C706" alt="" />
         <div className="person">
@@ -17,6 +18,7 @@ const Profile = () => {
     </div>
     Main Content
 </div>
+)
 }
 
 export default Profile;
