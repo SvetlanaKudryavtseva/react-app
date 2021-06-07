@@ -1,3 +1,4 @@
+import Posts from './Posts/Posts';
 import styles from './Profile.module.css';
 const Profile = () => {
     return (
@@ -9,16 +10,9 @@ const Profile = () => {
                 <p className={styles.person_name}>Eva</p>
                 <p className={styles.surname}>Adams</p>
             </div>
-            <div className={styles.posts}>
-                <div className={styles.newPost}></div>
-                <div className="posts__list">
-                <div className="posts__item">Post 1</div>
-                <div className="posts__item">Post 2</div>
-            </div>
+            <Posts />
         </div>
     </div>
-    Main Content
-</div>
 )
 }
 
