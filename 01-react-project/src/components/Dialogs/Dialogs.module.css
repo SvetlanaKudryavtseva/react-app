@@ -2,11 +2,3 @@
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
-
-.list {
-    padding: 10px;
-}
-
-.active {
-    color: gold;
-}

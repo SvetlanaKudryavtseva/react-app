@@ -1,14 +1,15 @@
 import styles from './Dialogs.module.css';
 import Messages from './Messages/Messages';
+import Dialog from './Dialog/Dialog';
 const Dialogs = () => {
     return (
         <div className={styles.wrap}>
+            
             <div className={styles.list}>
-                <div className={styles.item + ' ' + styles.active}>Ira</div>
-                <div className={styles.item}>Sveta</div>
-                <div className={styles.item}>Dima</div>
-                <div className={styles.item}>Sasha</div>
-                <div className={styles.item}>Lena</div>
+                <Dialog name="Olga" id="1"/>
+                <Dialog name="Sveta" id="2"/>
+                <Dialog name="Yulya" id="3"/>
+
             </div>
             <Messages />
         </div>
