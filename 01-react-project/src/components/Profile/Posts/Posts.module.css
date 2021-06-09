@@ -1,5 +1,9 @@
-.heading {
-    font-size: 18px;
+.wrap {
+    padding: 10px;
+}
+
+.textarea {
+    display: block;
 }
 
 .new_post {
