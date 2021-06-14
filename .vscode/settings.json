@@ -1,0 +1,8 @@
+{
+    "gitflow4code.features": [
+        {
+            "name": "feature/data_to_indexJS",
+            "base": "develop"
+        }
+    ]
+}
