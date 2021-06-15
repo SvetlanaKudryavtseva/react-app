@@ -9,17 +9,25 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
 
+const headings = {
+  heading: 'First React App',
+  subheading: 'Learning React and Redux'
+}
 
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <div className="app-wrapper">
-        <Header />
+        <Header data={headings}/>
         <Navbar />
         <div className="app-wrapper__content">
+         {/*  <Route path="/dialogs" route={ () => <Dialogs /> } />*/}
+          <Route path="/profile" route={ () => <Profile/> } />
+          <Route path="/profile" component={Profile} />
           <Route path="/dialogs" component={Dialogs} />
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/music" component={Music} />
           <Route exact path="/news" component={News} />
           <Route exact path="/music" component={Music} />
           <Route exact path="/settings" component={Settings} />

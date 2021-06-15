@@ -1,10 +1,8 @@
 import styles from './Posts.module.css'
 import Post from './Post/Post'
-const Posts = () => {
-    let postData = [
-        {id: 1, message: '1st message', likesCount: '23'},
-        {id: 2, message: '2nd message', likesCount: '17'},
-    ]
+const Posts = (props) => {
+
+    let postItems = props.data.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
     
     return (
     <div className={styles.wrap}>
@@ -12,8 +10,7 @@ const Posts = () => {
         <button className={styles.button}>Submit</button>
         <div className={styles.new_post}></div>
         <div className={styles.list}>
-            <Post message={postData[0].message} likesCount={postData[0].likesCount}/>
-            <Post message={postData[1].message} likesCount={postData[1].likesCount}/>
+            { postItems }
         </div>
     </div>
     )
