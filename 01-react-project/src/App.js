@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import Ten from './components/Ten/Ten';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
@@ -14,18 +15,23 @@ const headings = {
   subheading: 'Learning React and Redux'
 }
 
+const App = (props) => {
+  let multiplication = {
+    number: 5,
+    factor: 2,
+    operation: '*',
+  }
 
-const App = () => {
 
   return (
     <BrowserRouter>
       <div className="app-wrapper">
-        <Header data={headings}/>
+        <Header data_headings={headings}/>
         <Navbar />
+        <Ten data_multiplication={multiplication}/>
         <div className="app-wrapper__content">
          {/*  <Route path="/dialogs" route={ () => <Dialogs /> } />*/}
-          <Route path="/profile" route={ () => <Profile/> } />
-          <Route path="/profile" component={Profile} />
+          <Route path='/profile' render={ () => <Profile data_posts={props.data_posts}/> }/>
           <Route path="/dialogs" component={Dialogs} />
           <Route exact path="/music" component={Music} />
           <Route exact path="/news" component={News} />

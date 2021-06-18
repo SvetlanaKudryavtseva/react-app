@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+let data_posts = [
+  {id: 1, message: '1st message', likesCount: '23'},
+  {id: 2, message: '2nd message', likesCount:'17'},
+]
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App data_posts={data_posts}/>
   </React.StrictMode>,
   document.getElementById('root'),
 );
