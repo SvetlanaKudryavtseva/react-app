@@ -30,9 +30,8 @@ const App = (props) => {
         <Navbar />
         <Ten data_multiplication={multiplication}/>
         <div className="app-wrapper__content">
-         {/*  <Route path="/dialogs" route={ () => <Dialogs /> } />*/}
+          <Route path="/dialogs" render={ () => <Dialogs data_dialogs={props.data_dialogs} data_messages={props.data_messages}/> } />
           <Route path='/profile' render={ () => <Profile data_posts={props.data_posts}/> }/>
-          <Route path="/dialogs" component={Dialogs} />
           <Route exact path="/music" component={Music} />
           <Route exact path="/news" component={News} />
           <Route exact path="/music" component={Music} />

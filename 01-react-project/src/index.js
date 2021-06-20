@@ -7,9 +7,20 @@ let data_posts = [
   {id: 1, message: '1st message', likesCount: '23'},
   {id: 2, message: '2nd message', likesCount:'17'},
 ]
+let data_dialogs = [
+  {name: 'Olga', id: 1},
+  {name: 'Sveta', id: 2},
+  {name: 'Yulya', id: 3}
+]
+let data_messages = [
+  {text: 'Olga: Hi', id: 1},
+  {text: 'Sveta: Hi', id: 2},
+  {text: 'Yulya: Hi hi', id: 3}
+]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App data_posts={data_posts}/>
+    <App data_posts={data_posts} data_dialogs={data_dialogs} data_messages={data_messages}/>
   </React.StrictMode>,
   document.getElementById('root'),
 );
